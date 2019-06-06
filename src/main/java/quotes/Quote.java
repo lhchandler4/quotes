@@ -1,16 +1,24 @@
 package quotes;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Quote {
     private String author;
-    private String quote;
+    private String text;
+    private String likes;
+    private ArrayList<String> tags;
 
-    public Quote(String author, String quote){
+    public Quote(String author, String text, String likes){
         this.author = author;
-        this.quote = quote;
+        this.text = text;
+        this.likes = likes;
     }
 
+    public String getText() {
+        return text;
+    }
     public String toString(){
-        return String.format("%s wrote, %s", this.author, this.quote);
+        return String.format("%s wrote, %s The quote got %s", this.author, this.text, this.likes);
     }
 
 }
