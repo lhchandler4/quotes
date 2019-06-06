@@ -4,12 +4,15 @@
 package quotes;
 
 import org.junit.Test;
+
+import java.io.FileNotFoundException;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void test_randomQuote() {
-
-
-
+    @Test public void test_randomQuote(){
+        App test = new App();
+        Quote  exp = test.randomQuote();
+        assertNotNull("There is something in here",exp);
     }
 }

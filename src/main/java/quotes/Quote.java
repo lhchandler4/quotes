@@ -17,7 +17,6 @@ public class Quote {
     }
 
     public String getText() {
-
         return text;
     }
 
