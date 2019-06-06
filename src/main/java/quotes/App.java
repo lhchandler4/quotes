@@ -3,12 +3,24 @@
  */
 package quotes;
 
+import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println(.toString());
+    }
+
+    public static int quoteJSONReader(String filePath){
+        try {
+            Scanner scan = new Scanner(new File(filePath));
+
+        } catch (FileNotFoundException e){
+            System.out.println("File was not found.");
+            System.out.println(e);
+        }
+
     }
 }
