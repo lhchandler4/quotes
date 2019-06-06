@@ -8,6 +8,8 @@ public class Quote {
     private String likes;
     private ArrayList<String> tags;
 
+
+
     public Quote(String author, String text, String likes){
         this.author = author;
         this.text = text;
@@ -15,7 +17,12 @@ public class Quote {
     }
 
     public String getText() {
+
         return text;
+    }
+
+    public String getAuthor() {
+        return author;
     }
     public String toString(){
         return String.format("%s wrote, %s The quote got %s", this.author, this.text, this.likes);
