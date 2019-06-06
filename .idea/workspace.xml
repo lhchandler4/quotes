@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e9eedd-00d2-4b65-9d72-c5cd9e0a1b3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/quotes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/quotes/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/quotes/Quote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/quotes/Quote.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quotes/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quotes/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quotes/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quotes/Quote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,9 +33,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quotes/Quote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="375">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="59" />
               <folding>
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
               </folding>
@@ -44,8 +48,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quotes/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="375">
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/quotes/AppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,22 +70,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" selection-start-line="9" selection-end-line="9" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="435">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,12 +96,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/quotes/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/quotes/Quote.java" />
-        <option value="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/quotes/App.java" />
+        <option value="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quotes/Quote.java" />
+        <option value="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" />
       </list>
     </option>
   </component>
@@ -183,23 +190,94 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="quotes.App" />
-      <module name="quotes.main" />
+  <component name="RunManager" selected="JUnit.QuoteTest.test_Quote_get_text">
+    <configuration name="AppTest.test_randomQuote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quotes.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="quotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="quotes" />
+      <option name="MAIN_CLASS_NAME" value="quotes.AppTest" />
+      <option name="METHOD_NAME" value="test_randomQuote" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteTest.test_Quote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quotes.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="quotes" />
+      <option name="MAIN_CLASS_NAME" value="quotes.QuoteTest" />
+      <option name="METHOD_NAME" value="test_Quote" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteTest.test_Quote_get_Auther" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quotes.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="quotes" />
+      <option name="MAIN_CLASS_NAME" value="quotes.QuoteTest" />
+      <option name="METHOD_NAME" value="test_Quote_get_Auther" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteTest.test_Quote_get_text" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quotes.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="quotes" />
+      <option name="MAIN_CLASS_NAME" value="quotes.QuoteTest" />
+      <option name="METHOD_NAME" value="test_Quote_get_text" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteTest.test_randomQuote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quotes.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="quotes" />
+      <option name="MAIN_CLASS_NAME" value="quotes.QuoteTest" />
+      <option name="METHOD_NAME" value="test_randomQuote" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.QuoteTest.test_Quote_get_text" />
+        <item itemvalue="JUnit.QuoteTest.test_Quote_get_Auther" />
+        <item itemvalue="JUnit.QuoteTest.test_Quote" />
+        <item itemvalue="JUnit.QuoteTest.test_randomQuote" />
+        <item itemvalue="JUnit.AppTest.test_randomQuote" />
       </list>
     </recent_temporary>
   </component>
@@ -216,11 +294,31 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AppTest_test_randomQuote - 2019.06.06 at 12h 58m 12s.xml">
+      <configuration name="AppTest.test_randomQuote" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuoteTest_test_randomQuote - 2019.06.06 at 12h 59m 38s.xml">
+      <configuration name="QuoteTest.test_randomQuote" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuoteTest_test_Quote - 2019.06.06 at 13h 04m 44s.xml">
+      <configuration name="QuoteTest.test_Quote" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuoteTest_test_Quote - 2019.06.06 at 13h 04m 59s.xml">
+      <configuration name="QuoteTest.test_Quote" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuoteTest_test_Quote - 2019.06.06 at 13h 05m 27s.xml">
+      <configuration name="QuoteTest.test_Quote" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuoteTest_test_Quote_get_Auther - 2019.06.06 at 13h 06m 30s.xml">
+      <configuration name="QuoteTest.test_Quote_get_Auther" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19170243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -230,17 +328,17 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32930514" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -267,10 +365,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="390">
+            <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/quotes/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="150">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quotes/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -279,9 +397,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quotes/Quote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="375">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="59" />
           <folding>
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
             <element signature="e#457#458#0" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
           </folding>
@@ -290,28 +410,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quotes/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="435">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>

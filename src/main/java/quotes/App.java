@@ -14,7 +14,7 @@ public class App {
         System.out.println(randomQuote());
     }
 
-    public static String randomQuote(){
+    public static Quote randomQuote(){
         StringBuffer fileReading = new StringBuffer();
         try {
             Scanner quotesJSON = new Scanner(new File("./assets/recentquotes.json"));
@@ -27,6 +27,7 @@ public class App {
         Gson gson = new Gson();
         Quote[] quotes = gson.fromJson(fileReading.toString(), Quote[].class);
         Random randomous = new Random();
-        return quotes[randomous.nextInt(quotes.length)].toString();
+        return quotes[randomous.nextInt(quotes.length)];
     }
 }
+
