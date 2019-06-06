@@ -3,6 +3,7 @@
  */
 package quotes;
 
+import com.google.gson.Gson;
 import java.util.*;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,17 +11,22 @@ import java.io.FileNotFoundException;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println(.toString());
+        System.out.println(randomQuote());
     }
 
-    public static int quoteJSONReader(String filePath){
+    public static String randomQuote(){
+        StringBuffer fileReading = new StringBuffer();
         try {
-            Scanner scan = new Scanner(new File(filePath));
-
-        } catch (FileNotFoundException e){
-            System.out.println("File was not found.");
+            Scanner quotesJSON = new Scanner(new File("./assets/recentquotes.json"));
+            while (quotesJSON.hasNextLine()) {
+                fileReading.append(quotesJSON.nextLine()); }
+        } catch(FileNotFoundException e){
+            System.out.println("The File was not found");
             System.out.println(e);
         }
-
+        Gson gson = new Gson();
+        Quote[] quotes = gson.fromJson(fileReading.toString(), Quote[].class);
+        Random randomous = new Random();
+        return quotes[randomous.nextInt(quotes.length)].toString();
     }
 }
