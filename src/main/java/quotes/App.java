@@ -4,30 +4,50 @@
 package quotes;
 
 import com.google.gson.Gson;
+
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.*;
-import java.io.File;
-import java.io.FileNotFoundException;
 
 public class App {
 
-    public static void main(String[] args) {
-        System.out.println(randomQuote());
+    public static void main(String[] args) throws IOException {
+        System.out.println(ronSwansonQuote());
     }
 
-    public static Quote randomQuote(){
-        StringBuffer fileReading = new StringBuffer();
-        try {
-            Scanner quotesJSON = new Scanner(new File("./assets/recentquotes.json"));
-            while (quotesJSON.hasNextLine()) {
-                fileReading.append(quotesJSON.nextLine()); }
-        } catch(FileNotFoundException e){
-            System.out.println("The File was not found");
-            System.out.println(e);
-        }
-        Gson gson = new Gson();
-        Quote[] quotes = gson.fromJson(fileReading.toString(), Quote[].class);
-        Random randomous = new Random();
-        return quotes[randomous.nextInt(quotes.length)];
+    public static String randomQuote(){
+            StringBuffer fileReading = new StringBuffer();
+            try {
+                Scanner quotesJSON = new Scanner(new File("./assets/recentquotes.json"));
+                while (quotesJSON.hasNextLine()) {
+                    fileReading.append(quotesJSON.nextLine());
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("The File was not found");
+                System.out.println(e);
+            }
+            Gson gson = new Gson();
+            Quote[] quotes = gson.fromJson(fileReading.toString(), Quote[].class);
+            Random randomous = new Random();
+            return quotes[randomous.nextInt(quotes.length)].toString();
     }
+
+    public static String ronSwansonQuote(){
+        try {
+            URL url = new URL("https://ron-swanson-quotes.herokuapp.com/v2/quotes");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            BufferedReader reader = new BufferedReader(new InputStreamReader((con.getInputStream())));
+            Gson gson = new Gson();
+            String[] ronSwanson = gson.fromJson(reader, String[].class);
+            Quote ronnie = new Quote(ronSwanson[0]);
+            return ronnie.toStringRon();
+        }catch (IOException e){
+            System.out.println("Can't Get a quote from Ron");
+            System.out.println(e);
+            return randomQuote();
+        }
+    }
+
 }
 
