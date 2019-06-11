@@ -4,6 +4,8 @@
 package quotes;
 
 import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -48,6 +50,44 @@ public class App {
             return randomQuote();
         }
     }
+
+    public static ArrayList readingTheFile(Quote quote){
+        try{
+            Gson gson = new Gson();
+            JsonReader originalFile = new JsonReader(new FileReader("./assets/recentquotes.json"));
+            ArrayList<Quote> quoted = new ArrayList<>();
+            originalFile.beginArray();
+            while(originalFile.hasNext()){
+                Quote quotey = gson.fromJson(originalFile, Quote.class);
+                quoted.add(quotey);
+            }
+            quoted.add(quote);
+            originalFile.endArray();
+            originalFile.close();
+            return quoted;
+        } catch (IOException e){
+            System.out.println(e);
+            return new ArrayList();
+        }
+    }
+
+
+    public static void writeFile(ArrayList<Quote> arr){
+        try {
+            Gson gson = new Gson();
+            JsonWriter addIt = new JsonWriter(new FileWriter("./assets/recentquotes.json"));
+            addIt.setIndent("  ");
+            addIt.beginArray();
+            for(Quote quote: arr){
+                gson.toJson(quote, Quote.class, addIt);
+            }
+            addIt.endArray();
+            addIt.close();
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
+
 
 }
 
