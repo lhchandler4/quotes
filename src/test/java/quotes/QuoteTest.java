@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class QuoteTest {
-    @Test
-    public void test_randomQuote(){
-        App test = new App();
-        Quote  exp = test.randomQuote();
-        assertNotNull("There is something in here",exp);
-    }
+//    @Test
+//    public void test_randomQuote(){
+//        App test = new App();
+//        Quote exp = test.randomQuote();
+//        assertNotNull("There is something in here",exp);
+//    }
 
     @Test
     public void test_Quote(){
