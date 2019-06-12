@@ -9,10 +9,10 @@ import java.io.FileNotFoundException;
 
 import static org.junit.Assert.*;
 
-//public class AppTest {
-//    @Test public void test_randomQuote(){
-//        App test = new App();
-//        Quote  exp = test.randomQuote();
-//        assertNotNull("There is something in here",exp);
-//    }
-//}
+public class AppTest {
+    @Test public void test_ronSwanson(){
+        App test = new App();
+        String exp = test.ronSwansonQuote();
+        assertNotNull("There is something in here",exp);
+    }
+}

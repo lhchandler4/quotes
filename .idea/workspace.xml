@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e9eedd-00d2-4b65-9d72-c5cd9e0a1b3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/recentquotes.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/recentquotes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/quotes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/quotes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/quotes/Quote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/quotes/Quote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quotes/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quotes/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" afterDir="false" />
     </list>
@@ -30,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quotes/Quote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="270">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#392#393#0" expanded="true" />
                 <element signature="e#424#425#0" expanded="true" />
@@ -48,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quotes/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="347">
               <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="12" selection-end-column="7" />
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/quotes/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" selection-start-line="11" selection-end-line="18" />
+            <state relative-caret-position="180">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +105,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/quotes/App.java" />
-        <option value="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/quotes/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java" />
       </list>
     </option>
   </component>
@@ -210,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.QuoteTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="quotes.App" />
       <module name="quotes.main" />
@@ -220,6 +215,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quotes.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="quotes" />
+      <option name="MAIN_CLASS_NAME" value="quotes.QuoteTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,29 +282,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuoteTest.test_randomQuote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quotes.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="quotes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="quotes" />
-      <option name="MAIN_CLASS_NAME" value="quotes.QuoteTest" />
-      <option name="METHOD_NAME" value="test_randomQuote" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuoteTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.QuoteTest.test_Quote_get_text" />
         <item itemvalue="JUnit.QuoteTest.test_Quote_get_Auther" />
         <item itemvalue="JUnit.QuoteTest.test_Quote" />
-        <item itemvalue="JUnit.QuoteTest.test_randomQuote" />
       </list>
     </recent_temporary>
   </component>
@@ -396,16 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quotes/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/recentquotes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -413,10 +397,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/quotes/Quote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quotes/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -425,23 +422,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/quotes/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="18" />
+        <state relative-caret-position="180">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quotes/Quote.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/quotes/QuoteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
